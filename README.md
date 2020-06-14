@@ -5,7 +5,22 @@
 
 Adaptive curvefitting is a tool to find potentially optimal models for your research data. It's based on [scipy], [numpy], and [matplotlib]. 
 
-## Why is this tool? 
+## Table of contents
+- [Why is this tool?](#why-is-this-tool-)
+- [Installation, update and uninstallation](#installation--update-and-uninstallation)
+  * [To install](#to-install)
+  * [To update](#to-update)
+  * [To uninstall](#to-uninstall)
+- [Usage](#usage)
+  * [Import the required module](#import-the-required-module)
+  * [Do the curvefitting](#do-the-curvefitting)
+  * [Generate a expected model](#generate-a-expected-model)
+  * [Re-use the fitted curve](#re-use-the-fitted-curve)
+- [Shortages](#shortages)
+- [How to cite?](#how-to-cite-)
+- [Changelog](#changelog)
+
+## Why is this tool?
 
 The very difference of adaptive-curvefitting with [numpy.polyfit], [scipy.optimize.curve_fit] or [scipy.optimize.least_squares] is the hypothesis you don’t know which model to fit. If you already have the expected model, the methods in [scipy] and [numpy] are fantastic tools and better than this one. When you explore something unknown, this will be a maybe.
 
