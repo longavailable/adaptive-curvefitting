@@ -132,7 +132,7 @@ For example, arguments of `bounds`, `x0` or `p0` were not supported due to the *
 If this tool is useful to your research, 
 <a class="github-button" href="https://github.com/longavailable/adaptive-curvefitting" aria-label="Star longavailable/adaptive-curvefitting on GitHub">star</a> and cite it as below:
 ```
-Xiaolong Liu, & Meixiu Yu. (2020, June 14). longavailable/adaptive-curvefitting (Version v0.1.0). Zenodo. 
+Xiaolong Liu, & Meixiu Yu. (2020, June 14). longavailable/adaptive-curvefitting. Zenodo. 
 http://doi.org/10.5281/zenodo.3893596
 ```
 Easily, you can import it to 
