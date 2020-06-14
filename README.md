@@ -22,7 +22,7 @@ Adaptive curvefitting is a tool to find potentially optimal models for your rese
 
 ## Why is this tool
 
-The very difference of adaptive-curvefitting with [numpy.polyfit], [scipy.optimize.curve_fit] or [scipy.optimize.least_squares] is the hypothesis you don’t know which model to fit. If you already have the expected model, the methods in [scipy] and [numpy] are fantastic tools and better than this one. When you explore something unknown, this will be a maybe.
+The very difference of adaptive-curvefitting with [numpy.polyfit], [scipy.optimize.curve_fit] or [scipy.optimize.least_squares] is **the hypothesis you don’t know which model to fit**. If you already have the expected model, the methods in [scipy] and [numpy] are fantastic tools and better than this one. **When you explore something unknown, this will be a maybe**.
 
 ## Installation, update and uninstallation
 
