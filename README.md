@@ -101,7 +101,7 @@ There are some optional arguments of `oneClickCurveFitting`.
 - kwargs: keyword arguments passed to `curve_fit_m`. Note that `bounds` and `p0` will take no effect when multi-models.
 	- Type: dict
 
-You can find an complete example [/tests/curvefitting.py].
+See the complete example "[/tests/curvefitting.py]".
 
 ### Generate a expected model
 
@@ -112,11 +112,11 @@ funcs = ['gaussian','erf']
 myfunc = generateFunction(funcs, functionName='myfunc', operator='+')['model']
 ```
 
-You can find an complete example [/tests/custom_a_model.py].
+See the complete example "[/tests/custom_a_model.py]".
 
 ### Re-use the fitted curve
 
-See an complete example [/tests/reuse_the_fitted_model.py].
+See the complete example "[/tests/reuse_the_fitted_model.py]".
 
 ## Shortages
 
@@ -148,5 +148,5 @@ Easily, you can import it to
 [scipy.optimize.least_squares]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html
 [pip]: https://pip.pypa.io/en/stable/
 [/tests/curvefitting.py]: /tests/curvefitting.py
-[/tests/reuse_the_fitted_model.py]: /tests/reuse_the_fitted_model.py
+[/tests/custom_a_model.py]: /tests/custom_a_model.py
 [/tests/reuse_the_fitted_model.py]: /tests/reuse_the_fitted_model.py
