@@ -1,4 +1,4 @@
-
+                             
 # Adaptive Curvefitting Tool
 
 [![PyPI version](https://badge.fury.io/py/adaptive-curvefitting.svg)](https://badge.fury.io/py/adaptive-curvefitting)
@@ -139,7 +139,7 @@ Easily, you can import it to
 
 ## Changelog
 
-### v0.1.2
+### v0.1.3
 
 - First release.
 

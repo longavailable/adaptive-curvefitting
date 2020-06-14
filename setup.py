@@ -1,5 +1,5 @@
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 from setuptools import setup, find_packages
 
@@ -14,7 +14,7 @@ setup(
 	description='A tool for adaptive selection of curve-fitting models.',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
-	url='https://github.com/longavailable/adaptive-curvefit',
+	url='https://github.com/longavailable/adaptive-curvefitting',
 	packages=find_packages(),
 	classifiers=[
 		'Programming Language :: Python :: 3',
