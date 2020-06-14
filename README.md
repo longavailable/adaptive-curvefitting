@@ -2,7 +2,7 @@
 # Adaptive Curvefitting Tool
 
 [![PyPI version](https://badge.fury.io/py/adaptive-curvefit.svg)](https://badge.fury.io/py/adaptive-curvefit)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3893609.svg)](https://doi.org/10.5281/zenodo.3893609)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3893596.svg)](https://doi.org/10.5281/zenodo.3893596)
 
 Adaptive curvefitting is a tool to find potentially optimal models for your research data. It's based on [scipy], [numpy], and [matplotlib]. 
 
@@ -132,10 +132,10 @@ If this tool is useful to your research,
 <a class="github-button" href="https://github.com/longavailable/adaptive-curvefitting" aria-label="Star longavailable/adaptive-curvefitting on GitHub">star</a> and cite it as below:
 ```
 Xiaolong Liu, & Meixiu Yu. (2020, June 14). longavailable/adaptive-curvefitting (Version v0.1.0). Zenodo. 
-http://doi.org/10.5281/zenodo.3893609
+http://doi.org/10.5281/zenodo.3893596
 ```
 Easily, you can import it to 
-<a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/3893609" class="eye-protector-processed" style="border-color: rgba(0, 0, 0, 0.35); color: rgb(0, 0, 0);"><i class="fa fa-external-link"></i> Mendeley</a>.
+<a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/3893596" class="eye-protector-processed" style="border-color: rgba(0, 0, 0, 0.35); color: rgb(0, 0, 0);"><i class="fa fa-external-link"></i> Mendeley</a>.
 
 ## Changelog
 
