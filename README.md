@@ -20,7 +20,7 @@ Adaptive curvefitting is a tool to find potentially optimal models for your rese
 - [How to cite?](#how-to-cite)
 - [Changelog](#changelog)
 
-## Why is this tool ? {#why-is-this-tool}
+## Why is this tool
 
 The very difference of adaptive-curvefitting with [numpy.polyfit], [scipy.optimize.curve_fit] or [scipy.optimize.least_squares] is ***the hypothesis you don’t know which model to fit***. If you already have the expected model, the methods in [scipy] and [numpy] are fantastic tools and better than this one. ***When you explore something unknown, this will be a maybe***.
 
@@ -125,7 +125,7 @@ See the complete example "[/tests/reuse_the_fitted_model.py]".
 - Based on [scipy.optimize.least_squares], it cannot enhance the estimate of specified model. Evenmore, it has more limit than [scipy.optimize.least_squares]. 
 For example, arguments of `bounds`, `x0` or `p0` were not supported due to the ***basic hypothesis***.
 
-## How to cite ? {#how-to-cite}
+## How to cite
 
 If this tool is useful to your research, 
 <a class="github-button" href="https://github.com/longavailable/adaptive-curvefitting" aria-label="Star longavailable/adaptive-curvefitting on GitHub">star</a> and cite it as below:
