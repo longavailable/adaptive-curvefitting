@@ -13,6 +13,4 @@ Xiaolong Liu, Meixiu Yu. (2020, June 14). longavailable/adaptive-curvefitting (V
 And you can import it to 
 <a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/3880544" class="eye-protector-processed" style="border-color: rgba(0, 0, 0, 0.35); color: rgb(0, 0, 0);"><i class="fa fa-external-link"></i> Mendeley</a>.
 
-[![Watch on GitHub](https://img.shields.io/github/watchers/jonsn0w/hyde.svg?style=social)](https://github.com/jonsn0w/Hyde/watchers)
-[![Star on GitHub](https://img.shields.io/github/stars/jonsn0w/hyde.svg?style=social)](https://github.com/jonsn0w/hyde/stargazers)
 
