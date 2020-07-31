@@ -1,6 +1,7 @@
 from .longscurvefitting import oneClickCurveFitting
 from .longscurvefitting import generateFunction
 from .longscurvefitting import generateModels
+from .longscurvefitting import queryModel
 
 from .scipycurvefitm import curve_fit_m
 
