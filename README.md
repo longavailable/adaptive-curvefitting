@@ -150,6 +150,7 @@ Easily, you can import it to
 ### v0.1.4
 
 - Add `queryModel()` to simplify the reuse of a fitted model.
+- Replace `from scipy._lib._util import getargspec_no_self as _getargspec` with `from ._helpers import funcArgsNr`
 
 
 [scipy]: https://scipy.org/scipylib/
