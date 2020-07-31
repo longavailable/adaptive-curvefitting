@@ -34,7 +34,10 @@ Quick installation with [pip]:
 ```bash
 pip install adaptive-curvefitting
 ```
-
+Or from github:
+```bash
+pip install git+https://github.com/longavailable/adaptive-curvefitting
+```
 ### To update
 
 ```bash
