@@ -144,6 +144,10 @@ Easily, you can import it to
 
 - First release.
 
+### v0.1.4
+
+- Add `queryModel()` to simplify the reuse of a fitted model.
+
 
 [scipy]: https://scipy.org/scipylib/
 [numpy]: https://numpy.org/
