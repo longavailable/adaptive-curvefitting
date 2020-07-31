@@ -15,11 +15,10 @@ def curve_fit_m(f, xdata, ydata, p0=None, sigma=None, absolute_sigma=False,
 	"""
 	if p0 is None:
 		# determine number of parameters by inspecting the function
-		from scipy._lib._util import getargspec_no_self as _getargspec
-		args, varargs, varkw, defaults = _getargspec(f)
-		if len(args) < 2:
+		from ._helpers import funcArgsNr
+		n = funcArgsNr(f)-1 #except independent variable
+		if n < 1:
 				raise ValueError("Unable to determine number of fit parameters.")
-		n = len(args) - 1
 	else:
 		p0 = np.atleast_1d(p0)
 		n = p0.size
@@ -27,6 +26,7 @@ def curve_fit_m(f, xdata, ydata, p0=None, sigma=None, absolute_sigma=False,
 	lb, ub = prepare_bounds(bounds, n)
 	if p0 is None:
 		p0 = _initialize_feasible(lb, ub)
+	
 	bounded_problem = np.any((lb > -np.inf) | (ub < np.inf))
 	if method is None:
 		if bounded_problem:
