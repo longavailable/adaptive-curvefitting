@@ -1,16 +1,14 @@
 import numpy as np
 
-from longscurvefitting import generateModels
+from longscurvefitting import queryModel
 
+#fitted modelname and parameters
 fitted_model = {'modelname':'operation_power_law_power_law',
 								'parameters':[5, -0.4, 0.1, 0.5]
 								}
 
-#get model collection
-modelCollection = generateModels()
-
-#filter my model
-model = next(m['model'] for m in modelCollection if m['name'] == fitted_model['modelname'])
+#query fitted model by modelname, return a python function object
+model = queryModel(fitted_model['modelname'])
 
 #reuse it
 xdata = np.linspace(1e6,1e8,20)
