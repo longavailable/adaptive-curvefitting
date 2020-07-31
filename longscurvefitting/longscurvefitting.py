@@ -215,6 +215,22 @@ def generateModels(functions=basicModels_nameList, dataLength=0, piecewise=False
 			potential_models.append(current_model)
 	return potential_models
 
+def queryModel(modelname):
+	'''Query a in-house model by its modelname. This function is part of the implementation of the reuse fitted models.
+	
+	Parameters:
+		modelname: the model to query
+			Type: string
+	Returns:
+		model:
+			Type: function object
+	'''
+	#get in-house model collection
+	modelCollection = generateModels()
+	#filter specific model
+	model = next(m['model'] for m in modelCollection if m['name'] == modelname)
+	return model
+
 def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise=False, operator='+', maxCombination=2, plot_opt=10, xscale=None, yscale=None, filename_startwith='curvefit', silent=False, feedback=False, **kwargs):
 	'''Make a curve-fit in batch.
 	
