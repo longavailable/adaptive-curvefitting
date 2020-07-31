@@ -7,6 +7,10 @@
 
 Adaptive curvefitting is a tool to find potentially optimal models for your research data. It's based on [scipy], [numpy], and [matplotlib]. 
 
+<p float="left">
+<img width="400" height="172" src="https://github.com/longavailable/adaptive-curvefitting/raw/master/docs/pics/adaptive-curvefitting.png"/>
+</p>
+
 ## Table of contents
 - [Why is this tool?](#why-is-this-tool)
 - [Installation, update and uninstallation](#installation--update-and-uninstallation)
@@ -160,6 +164,6 @@ Easily, you can import it to
 [numpy.polyfit]: https://numpy.org/doc/stable/reference/generated/numpy.polyfit.html?highlight=fit#numpy-polyfit
 [scipy.optimize.least_squares]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html
 [pip]: https://pip.pypa.io/en/stable/
-[/tests/curvefitting.py]: /tests/curvefitting.py
-[/tests/custom_a_model.py]: /tests/custom_a_model.py
-[/tests/reuse_the_fitted_model.py]: /tests/reuse_the_fitted_model.py
+[/tests/curvefitting.py]: https://github.com/longavailable/adaptive-curvefitting/raw/master/tests/curvefitting.py
+[/tests/custom_a_model.py]: https://github.com/longavailable/adaptive-curvefitting/raw/master/tests/custom_a_model.py
+[/tests/reuse_the_fitted_model.py]: https://github.com/longavailable/adaptive-curvefitting/raw/master/tests/reuse_the_fitted_model.py
