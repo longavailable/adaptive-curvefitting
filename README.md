@@ -3,6 +3,7 @@
 
 [![PyPI version](https://badge.fury.io/py/adaptive-curvefitting.svg)](https://badge.fury.io/py/adaptive-curvefitting)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/adaptive-curvefitting)
+[![Downloads](https://pepy.tech/badge/adaptive-curvefitting)](https://pepy.tech/project/adaptive-curvefitting)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3893596.svg)](https://doi.org/10.5281/zenodo.3893596)
 
 Adaptive curvefitting is a tool to find potentially optimal models for your research data. It's based on [scipy], [numpy], and [matplotlib]. 
