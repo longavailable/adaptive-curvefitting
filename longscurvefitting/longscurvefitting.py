@@ -213,6 +213,7 @@ def generateModels(functions=basicModels_nameList, dataLength=0, piecewise=False
 			#generate model
 			current_model = generateFunction(funcs, operator=operator)
 			potential_models.append(current_model)
+
 	return potential_models
 
 def queryModel(modelname):
@@ -231,7 +232,7 @@ def queryModel(modelname):
 	model = next(m['model'] for m in modelCollection if m['name'] == modelname)
 	return model
 
-def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise=False, operator='+', maxCombination=2, plot_opt=10, xscale=None, yscale=None, filename_startwith='curvefit', silent=False, feedback=False, **kwargs):
+def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise=False, operator='+', maxCombination=2, plot_opt=10, xscale=None, yscale=None, filename_startwith='curvefit', silent=False, feedback="none", **kwargs):
 	'''Make a curve-fit in batch.
 	
 	Parameters:
@@ -266,9 +267,9 @@ def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise
 		silent: minimal output to monitor
 			Type: boolean
 			Default: False
-		feedback: if True, return the optimal model(function object), parameters
-			Type: boolean
-			Default: False
+		feedback: one of {"none", "best", "all"}
+			Type: str
+			Default: "none"
 		kwargs: keyword arguments passed to `curve_fit_m`. Note that `bounds` and `p0` will take no effect when multi-models
 			Type: dict
 	Returns:
@@ -322,8 +323,23 @@ def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise
 			if not silent: print('\t%s' % m['modelname'])
 			curve_fit_plot(xdata, ydata, ydata_fit , m['modelname'], filename_startwith=filename_startwith)
 			if xscale or yscale: curve_fit_plot(xdata, ydata, ydata_fit , m['modelname'], xscale=xscale, yscale=yscale, filename_startwith=filename_startwith)
-	if feedback:
+
+	if feedback == "best":
 		model, paras = next(m_p['model'] for m_p in potential_models if m_p['name'] == report[0]['modelname']), report[0]['parameters']
 		return model, paras
+
+	elif feedback == "all":
+		models = {model["name"]:model for model in potential_models}
+
+		for fit in report:
+			models[fit["modelname"]]["params"] = fit["parameters"]
+			models[fit["modelname"]]["stdevs"] = fit["stdevs"]
+			models[fit["modelname"]]["cost"] = fit["cost"]
+
+		# remove not fit models
+		models = {name:model for name,model in models.items() if "params" in model}
+
+		return models
+
 	report.clear()
 	print('Reminder -- models report and figures were saved in folder "curvefit".')
