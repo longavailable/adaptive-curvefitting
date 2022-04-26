@@ -322,8 +322,10 @@ def oneClickCurveFitting(xdata, ydata, functions=basicModels_nameList, piecewise
 			if not silent: print('\t%s' % m['modelname'])
 			curve_fit_plot(xdata, ydata, ydata_fit , m['modelname'], filename_startwith=filename_startwith)
 			if xscale or yscale: curve_fit_plot(xdata, ydata, ydata_fit , m['modelname'], xscale=xscale, yscale=yscale, filename_startwith=filename_startwith)
+			
+	print('Reminder -- models report and figures were saved in folder "curvefit".')
+	
 	if feedback:
 		model, paras = next(m_p['model'] for m_p in potential_models if m_p['name'] == report[0]['modelname']), report[0]['parameters']
 		return model, paras
 	report.clear()
-	print('Reminder -- models report and figures were saved in folder "curvefit".')

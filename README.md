@@ -157,6 +157,9 @@ Easily, you can import it to
 - Add `queryModel()` to simplify the reuse of a fitted model.
 - Replace `from scipy._lib._util import getargspec_no_self as _getargspec` with `from ._helpers import funcArgsNr`
 
+### v0.1.5
+
+- Updated the outdated module of sci.
 
 [scipy]: https://scipy.org/scipylib/
 [numpy]: https://numpy.org/

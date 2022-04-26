@@ -3,7 +3,7 @@
 import numpy as np
 from scipy.optimize import least_squares
 from scipy.optimize._lsq.least_squares import prepare_bounds
-from scipy.optimize.minpack import _wrap_func, _initialize_feasible
+from scipy.optimize._minpack_py import _wrap_func, _initialize_feasible
 from scipy.linalg import svd
 
 def curve_fit_m(f, xdata, ydata, p0=None, sigma=None, absolute_sigma=False,
