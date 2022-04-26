@@ -161,7 +161,7 @@ Easily, you can import it to
 
 - Updated the outdated module of [scipy].
 
-[scipy]: https://scipy.org/scipylib/
+[scipy]: https://scipy.org/
 [numpy]: https://numpy.org/
 [matplotlib]: https://matplotlib.org/
 [scipy.optimize.curve_fit]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html
