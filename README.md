@@ -159,7 +159,7 @@ Easily, you can import it to
 
 ### v0.1.5
 
-- Updated the outdated module of sci.
+- Updated the outdated module of [scipy].
 
 [scipy]: https://scipy.org/scipylib/
 [numpy]: https://numpy.org/
