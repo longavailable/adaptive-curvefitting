@@ -161,6 +161,10 @@ Easily, you can import it to
 
 - Updated the outdated module of [scipy].
 
+### v0.1.6
+
+- This bug occurs because Python 3.13 no longer exposes exec-defined local functions to `locals()` or `eval()` due to **PEP 667**. We resolve it by explicitly passing a namespace dictionary to `exec()` and retrieving the generated function from that dictionary instead.
+
 [scipy]: https://scipy.org/
 [numpy]: https://numpy.org/
 [matplotlib]: https://matplotlib.org/
