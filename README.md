@@ -9,7 +9,7 @@
 Adaptive curvefitting is a tool to find potentially optimal models for your research data. It's based on [scipy], [numpy], and [matplotlib]. 
 
 <p float="left">
-<img width="500" height="215" src="https://github.com/longavailable/adaptive-curvefitting/raw/master/docs/pics/adaptive-curvefitting.png"/>
+<img width="500" height="215" src="https://github.com/longavailable/adaptive-curvefitting/raw/main/docs/pics/adaptive-curvefitting.png"/>
 </p>
 
 ## Table of contents
